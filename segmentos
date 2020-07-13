@@ -1,0 +1,12 @@
+# Módulo tf.math
+
+import tensorflow as tf
+
+Inserindo uma matrix
+
+c = tf.constant([[1,2,3,4], [-1,-2,-3,-4], [5,6,7,8]])
+print(c)
+
+tf.math.segment_sum(c, tf.constant([0, 0, 1]))
+
+tf.math.unsorted_segment_sum(c, tf.constant([0, 1, 0]), num_segments=2)
